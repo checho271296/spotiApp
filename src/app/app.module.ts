@@ -10,6 +10,10 @@ import { SearchComponent } from './components/search/search.component';
 import { ArtistComponent } from './components/artist/artist.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 
+//Pipes
+import { NoimagePipe } from './pipes/noimage.pipe';
+import { ArtistCardComponent } from './components/shared/artist-card/artist-card.component';
+
 
 
 @NgModule({
@@ -18,7 +22,9 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
     HomeComponent,
     SearchComponent,
     ArtistComponent,
-    NavbarComponent
+    NavbarComponent,
+    NoimagePipe,
+    ArtistCardComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,9 @@
+<div class="card-columns animated fadeIn fast">
+    <div class="card" *ngFor="let release of newRealeses">
+        <img [src]="release.images | noimage" class="card-img-top">
+        <div class="card-body">
+            <h5 class="card-title">{{release.name}}</h5>
+            <p class="card-text"><span *ngFor="let artist of release.artists" class="badge badge-pill badge-secondary">{{artist.name}}</span></p>
+        </div>
+    </div>
+</div>

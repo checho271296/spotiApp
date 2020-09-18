@@ -22,7 +22,7 @@ app/services/spotify.service.ts
  getQuery(query :string){
     const url = `https://api.spotify.com/v1/${query}`;
     const headers = new HttpHeaders({
-   #   'Authorization': 'Bearer acessToken'
+      'Authorization': 'Bearer acessToken'
     });
 
 and change it in the Authorization line.

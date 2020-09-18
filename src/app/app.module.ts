@@ -13,6 +13,8 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 //Pipes
 import { NoimagePipe } from './pipes/noimage.pipe';
 import { ArtistCardComponent } from './components/shared/artist-card/artist-card.component';
+import { LoadingComponent } from './components/shared/loading/loading.component';
+import { DomseguroPipe } from './pipes/domseguro.pipe';
 
 
 
@@ -24,7 +26,9 @@ import { ArtistCardComponent } from './components/shared/artist-card/artist-card
     ArtistComponent,
     NavbarComponent,
     NoimagePipe,
-    ArtistCardComponent
+    ArtistCardComponent,
+    LoadingComponent,
+    DomseguroPipe
   ],
   imports: [
     BrowserModule,

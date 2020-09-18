@@ -1,8 +1,9 @@
 <div class="row mb-5">
     <div class="col">
-        <input type="text" (keyup)="searchArtists(artist.value)" class="form-control" placeholder="Search Artist..." #artist>
+        <input type="text" (keyup)="searchArtists(artist.value);" class="form-control" placeholder="Search Artist..." #artist>
+
     </div>
 </div>
 
-<app-artist-card [newRealeses]="artistArray">
-</app-artist-card>
+<app-loading *ngIf="loading"></app-loading>
+<app-artist-card *ngIf="!loading" [newRealeses]="artistArray"></app-artist-card>
